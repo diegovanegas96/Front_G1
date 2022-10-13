@@ -1,0 +1,47 @@
+<!DOCTYPE html>
+<html>
+    <head>
+        <script src="https://ajax.googleapis.com/ajax/libs/jquery/3.6.0/jquery.min.js"></script>
+        <script type="text/javascript" src="js/funcionesMensajes.js"></script>
+    </head>
+    <body>
+        <h1>Front Final G1</h1>
+        <h1> Mensajes </h1>
+        <ul>
+            <li><a href="index.html">Inicio</a></li>
+            <li><a href="gama.html">Gamas</a></li>
+            <li><a href="car.html">Carros</a></li>
+            <li><a href="clientes.html">Clientes</a></li>
+            <li><a href="reservaciones.html">Reservaciónes</a></li>
+            <li><a href="reportes.html">Reportes</a></li>
+        </ul>
+
+        <script type="text/javascript">
+            window.onload = getMensajes_Car();
+        </script>
+
+        <script type="text/javascript">
+            window.onload = getMensajes_Client();
+        </script>
+
+
+        <div>
+            <input type="text" id="messageText" placeholder="mensaje">
+
+            <select id="select-car"></select>
+
+            <select id="select-client"></select>
+         
+        </div>
+        
+        <button onclick="postMensajes()">
+            Crear Mensaje
+        </button>
+
+        <script type="text/javascript">
+            window.onload = getMensajes();
+        </script>
+
+        <div id="resultado1"></div>
+    </body>
+</html>

@@ -1,0 +1,40 @@
+<!DOCTYPE html>
+<html>
+    <head>
+        <script src="https://ajax.googleapis.com/ajax/libs/jquery/3.6.0/jquery.min.js"></script>
+        <script type="text/javascript" src="js/funcionesCar.js"></script>
+    </head>
+    <body>
+        <h1>Front Final G1</h1>
+        <h1> Carros </h1>
+        <ul>
+            <li><a href="index.html">Inicio</a></li>
+            <li><a href="gama.html">Gamas</a></li>
+            <li><a href="clientes.html">Clientes</a></li>
+            <li><a href="mensajes.html">Mensajes</a></li>
+            <li><a href="reservaciones.html">Reservaciónes</a></li>
+            <li><a href="reportes.html">Reportes</a></li>
+        </ul>  
+        
+        <div id="resultado2"></div>
+
+        <script type="text/javascript">
+            window.onload = getCar();
+        </script>
+
+        <script type="text/javascript">
+            window.onload = getGamaRelacion();
+        </script>
+
+
+        <div>
+            <input type="text" id="name" placeholder="nombre">
+            <input type="text" id="brand" placeholder="marca">
+            <input type="number" id="year" placeholder="año">
+            <input type="text" id="description" placeholder="descripción">
+            <select id="select-gama"></select>
+        </div>
+
+        <button onclick="postCar()">Crear Carro</button>   
+    </body>
+</html>

@@ -1,0 +1,52 @@
+<!DOCTYPE html>
+<html>
+    <head>
+        <script src="https://ajax.googleapis.com/ajax/libs/jquery/3.6.0/jquery.min.js"></script>
+        <script type="text/javascript" src="js/funcionesReservaciones.js"></script>
+    </head>
+    <body>
+        <h1>Front Final G1</h1>
+        <h1> Reservaciónes </h1>
+        <ul>
+            <li><a href="index.html">Inicio</a></li>
+            <li><a href="gama.html">Gamas</a></li>
+            <li><a href="car.html">Carros</a></li>
+            <li><a href="clientes.html">Clientes</a></li>
+            <li><a href="mensajes.html">Mensajes</a></li>
+            <li><a href="reportes.html">Reportes</a></li>
+        </ul>
+
+        <script type="text/javascript">
+            window.onload = getReservaciones_Car();
+        </script>
+
+        <script type="text/javascript">
+            window.onload = getReservaciones_Client();
+        </script>
+
+
+        <div>
+            <label>Ingrese la fecha de Inicio de la reservación</label>
+            <input type="date" id="startDate"><br>
+            <label>Ingrese la fecha de devolución del carro</label>
+            <input type="date" id="devolutionDate"><br>
+            <label>Estatus de la reservación</label>
+            <input type="text" id="status"><br>
+            
+            <select id="select-car"></select>
+
+            <select id="select-client"></select>
+         
+        </div>
+        
+        <button onclick="postReservaciones()">
+            Crear Reservación
+        </button>
+
+        <script type="text/javascript">
+            window.onload = getReservaciones();
+        </script>
+
+        <div id="resultado1"></div>
+    </body>
+</html>

@@ -1,0 +1,31 @@
+<!DOCTYPE html>
+<html>
+    <head>
+        <script src="https://ajax.googleapis.com/ajax/libs/jquery/3.6.0/jquery.min.js"></script>
+        <script type="text/javascript" src="js/funcionesGama.js"></script>
+        <script src="//cdn.jsdelivr.net/npm/sweetalert2@11"></script>
+    </head>
+    <body>
+        <h1>Gamas</h1>
+        <ul>
+            <li><a href="index.html">Inicio</a></li>
+            <li><a href="car.html">Carros</a></li>
+            <li><a href="clientes.html">Clientes</a></li>
+            <li><a href="mensajes.html">Mensajes</a></li>
+            <li><a href="reservaciones.html">Reservaciónes</a></li>
+            <li><a href="reportes.html">Reportes</a></li>
+        </ul>
+        <div id="resultado1"></div>
+        
+        
+        <div>
+            <input type="text" id="name" placeholder="nombre">
+            <input type="text" id="description" placeholder="descripción">
+        </div>
+        <button onclick="postGama()">Crear Gama</button>   
+        
+        <script type="text/javascript">
+            window.onload = getGama();
+        </script>
+    </body>
+</html>
